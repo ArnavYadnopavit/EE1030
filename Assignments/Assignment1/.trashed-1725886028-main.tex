@@ -1,0 +1,333 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{multicol}
+\newcounter {sectioicolsn}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{EE1030: Matrix Theory}
+\author{EE24BTECH11007 - Arnav Makarand Yadnopavit}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\begin{enumerate}[start=6,label={\arabic*}.]
+\item The number of distinct solutions of equation
+\medskip
+$\frac{5}{4}cos^2 2x+cos^4 x+sin^4 x+cos^6 x+sin^6 x=2$
+\smallskip
+
+in the interval [0,2$\pi$] is\hfill{$($JEE Adv. $2015)$} 
+%$($JEE Adv. $2015)$
+\medskip
+    \item Let $a, b, c$ be three non-zero real numbers such\smallskip
+    
+    that the equation:
+    \smallskip
+
+$\sqrt{3} acosx+2bsinx = c,x\in \left[\frac{-\pi}{2},\frac{\pi}{2}\right]$
+, has two distinct real roots $\alpha$ and $\beta$ with $\alpha+\beta=\frac{\pi}{3}$. Then, the value of $\frac{b}{a}$ is \underline{\hspace{2cm}}.\hspace{0.5cm}
+
+\hfill{$($JEE Adv. $2018)$}
+\end{enumerate}
+\bigskip
+
+{\LARGE Section-B JEE Main/AIEEE}
+\bigskip
+%Use this
+%$(a)$ $o$\hspace{1cm}  $(b)$ $o$\hspace{1cm} $(c)$ $o$\hspace{1cm} $(d)$ $o$
+ %or
+ %$(a)$ $o$\hspace{2cm} $(b)$ $o$
+
+\begin{enumerate}[label={\arabic*}.]
+\item The period of $sin^2 \theta$ is\hfill{$[2002]$} 
+
+\begin{multicols}{4}
+
+\brak{a} $\pi^2$
+\columnbreak
+
+\brak{b} $\pi$
+\columnbreak
+
+\brak{c} $2\pi$
+\columnbreak
+
+\brak{d} $\pi/2$
+\end{multicols}
+\medskip
+
+\item The number of solution of $tanx + secx=2cosx$ in $[0,2\pi]$ is\hfill{$[2002]$} 
+
+\begin{multicols}{4}
+
+\brak{a} $2$
+\columnbreak
+
+\brak{b} $3$
+\columnbreak
+
+\brak{c} $0$
+\columnbreak
+
+\brak{d} $1$
+\end{multicols}
+\medskip
+
+\item Which one is not periodic \hfill{$[2002]$}
+\medskip
+\begin{multicols}{2}
+
+\brak{a} $|sin3x|+sin^2 x$
+
+\brak{c} $cos4x+tan^2 x$
+\columnbreak
+
+\brak{b} $cos\sqrt{x}+cos^2 x$
+
+\brak{d} $cos2x+sinx$
+\end{multicols}
+
+\medskip
+\item Let $\alpha,\beta$ be such that $\pi<\alpha-\beta<3\pi$
+
+\smallskip
+If $sin\alpha+sin\beta=-\frac{21}{65}$ and $cos\alpha+cos\beta=-\frac{27}{65}$, then the value of $cos\frac{\alpha-\beta}{2}$\hfill{$[2004]$}
+\medskip
+
+\begin{multicols}{2}
+
+\brak{a} $-\frac{6}{65}$
+
+\brak{c} $\frac{6}{65}$
+\columnbreak
+
+\brak{b} $\frac{3}{\sqrt{130}}$
+
+\brak{d} $-\frac{3}{\sqrt{130}}$
+
+\end{multicols}
+
+\medskip
+\item If $u=\sqrt{a^2 cos^2 \theta+b^2 sin^2 \theta}$$+$$\sqrt{a^2 sin^2 \theta+b^2 cos^2 \theta}$
+then the difference between the  maximum and minimum values of $u^2$ is given by \hfill{$[2004]$}
+\medskip
+\begin{multicols}{2}
+
+\brak{a} $(a-b)^2$
+
+\brak{c} $(a+b)^2$
+\columnbreak
+
+\brak{b} $2\sqrt{a^2 +b^2}$
+
+\brak{d} $2(a^2 +b^2)$
+
+\end{multicols}
+
+\medskip
+ 
+\item A line makes the same angle $\theta$, with each of the x and z axis. 
+If the angle $\beta$, which it makes with y-axis, is such that
+$sin^2 \beta=3sin^2 \theta$, then $cos^2 \theta$ equals \hfill{$[2004]$}
+\medskip
+
+\begin{multicols}{2}
+
+\brak{a} $\frac{2}{5}$
+\medskip
+
+\brak{c} $\frac{3}{5}$
+\columnbreak
+
+\brak{b} $\frac{1}{5}$
+\medskip
+
+\brak{d} $\frac{2}{3}$
+
+\end{multicols}
+
+\medskip
+
+\item The number of values of $x$ in the interval $[0,3\pi]$ satisfying the equation 
+
+$2sin^2 x+5sinx-3=0$ is \hfill{$[2006]$}
+
+\medskip
+\begin{multicols}{4}
+
+\brak{a} 4
+\columnbreak
+
+\brak{b} 6
+\columnbreak
+
+\brak{c} 1
+\columnbreak
+
+\brak{d} 2
+
+\end{multicols}
+\medskip
+\item If $0<x<\pi$ and $cosx+sinx=\frac{1}{2}$, then $tanx$ is 
+
+\hfill{$[2006]$}
+\begin{multicols}{2}
+
+\brak{a} $\frac{(1-\sqrt{7})}{4}$
+
+\brak{c} $-\frac{(4+\sqrt{7}}{3}$
+\columnbreak
+
+\brak{b} $\frac{(4-\sqrt{7})}{3}$
+
+\brak{d} $\frac{(1+\sqrt{7})}{4}$
+
+\end{multicols}
+
+\medskip
+
+\item Let \textbf{A} and \textbf{B} denote the statements
+
+\textbf{A}:$cos\alpha+cos\beta+cos\gamma=0$
+
+\textbf{B}:$sin\alpha+sin\beta+sin\gamma=0$
+
+If $cos(\beta-\gamma)+cos(\gamma-\alpha)+cos(\alpha-\beta)=-\frac{3}{2}$,then:
+
+\smallskip
+\hfill{$[2009]$}
+
+\medskip
+\brak{a} \textbf{A} is false and \textbf{B} is true 
+
+\brak{b} both \textbf{A} and \textbf{B} are true
+
+\brak{c} both \textbf{A} and \textbf{B} are false 
+
+\brak{d} \textbf{A} is true and \textbf{B} is false
+
+\medskip
+\item Let $cos(\alpha+\beta)=\frac{4}{5}$  and $sin(\alpha-\beta)=\frac{5}{13}$, where $0\le\alpha$, $\beta\le\frac{\pi}{4}$. Then $tan2\alpha=$ \hfill{$[2010]$}
+\begin{multicols}{4}
+
+\brak{a} $\frac{56}{33}$
+\columnbreak
+
+\brak{b} $\frac{19}{12}$
+\columnbreak
+
+\brak{c} $\frac{20}{7}$
+\columnbreak
+
+\brak{d} $\frac{25}{16}$
+
+\end{multicols}
+
+\item If A=$sin^2x +cos^4 x$, Then for all real $x$:
+
+\hfill{$[2010]$}
+\medskip
+
+\begin{multicols}{2}
+
+\brak{a} $\frac{13}{16}\le$A$\le1$
+
+\brak{c} $\frac{3}{4}\le$A$\le\frac{13}{16}$
+\columnbreak
+
+\brak{b} $1\le$A$\le2$
+
+\brak{d} $\frac{3}{4}\le$A$\le1$
+\end{multicols}
+
+\medskip
+
+\item In a $\Delta$PQR, If $3 sinP + 4 cosQ=6$ and $4sinQ+3cosP=1$, then the angle $R$ is equal to: 
+
+\hfill{$[2012]$}
+\medskip
+\begin{multicols}{4}
+
+\brak{a} $\frac{5\pi}{6}$
+\columnbreak
+
+\brak{b} $\frac{\pi}{6}$
+\columnbreak
+
+\brak{c} $\frac{\pi}{4}$
+\columnbreak
+
+\brak{d} $\frac{3\pi}{4}$
+
+\end{multicols}
+
+\item ABCD is a trapezium such that AB and CD are parallel and BC$\perp$CD. If $\angle$ADB=$\theta$, BC=$p$ and CD=$q$, then AB is equal to:
+
+\hfill{$[$JEEM2013$]$}
+\medskip
+\begin{multicols}{2}
+
+\brak{a} $\frac{(p^2+q^2)sin\theta}{pcos\theta+qsin\theta}$
+
+\brak{c} $\frac{p^2+q^2}{pcos^2 \theta+qsin^2 \theta}$
+\columnbreak
+
+\brak{b} $\frac{p^2+q^2cos\theta}{pcos\theta+qsin\theta}$
+
+\brak{d} $\frac{(p^2+q^2)sin\theta}{(pcos\theta+qsin\theta)^2}$
+    
+\end{multicols}
+
+\end{enumerate}
+
+\end{document}
