@@ -1,9 +1,17 @@
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
-P=(4, 2, -6)
-Q=(10, -16, 6)
-R=(int((2/3)*(0.5*P[0]+Q[0])),int((2/3)*(0.5*P[1]+Q[1])),int((2/3)*(0.5*P[2]+Q[2])))
-S=(int((2/3)*(0.5*Q[0]+P[0])),int((2/3)*(0.5*Q[1]+P[1])),int((2/3)*(0.5*Q[2]+P[2])))
+with open("data.txt", 'r') as f:
+    L = f.readlines()
+a = []
+for line in L:
+    row = line.strip().split()  # Remove leading/trailing whitespace and split by spaces
+    row = [int(x) for x in row]  # Convert elements to integers
+    a.append(row)
+
+P=a[0]
+Q=a[1]
+R=a[2]
+S=a[3]
 fig = plt.figure()
 ax = fig.add_subplot(projection='3d')
 ax.scatter([P[0], Q[0], R[0]], [P[1], Q[1], R[1]], [P[2], Q[2], R[2]], label=['P', 'Q', 'R','S'])
