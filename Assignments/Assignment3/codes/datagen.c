@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "mathfun.h"
 int main(){
 	int A[3]={-2,3,5},B[3]={1,2,3},C[3]={7,0,-1};
 	FILE *ptr;
