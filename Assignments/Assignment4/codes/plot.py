@@ -10,6 +10,12 @@ for line in L:
 A=a[0]
 B=a[1]
 fig, ax = plt.subplots()
+plt.xlabel("X-axis")
+plt.ylabel("Y-axis")
+plt.xlim(-12, 12)
+plt.ylim(-12, 12)
+plt.grid(True)
+
 ax.plot([A[0], B[0]], [A[1], B[1]], marker='o', linestyle='-', color='blue', label='Line AB')
 ax.text(*A, f'A({A[0]}, {A[1]})')
 ax.text(*B, f'B({B[0]}, {B[1]})')
