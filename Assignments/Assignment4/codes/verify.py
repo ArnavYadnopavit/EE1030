@@ -7,6 +7,6 @@ AB=[]
 AB.append(func.sub(A[0],B[0]))
 AB.append(func.sub(A[1],B[1]))
 
-AB_c = (c_int * len(AB))(*AB)
+AB_c = (c_int * len(AB))(*AB) #Converts python list to c array
 norm=func.vector_norm(AB_c,2)
 print(norm)
