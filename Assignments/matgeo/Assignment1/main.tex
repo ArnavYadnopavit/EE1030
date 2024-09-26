@@ -38,7 +38,7 @@
 \usepackage{lscape}
 \begin{document}
 \bibliographystyle{IEEEtran}
-\title{1.8.20}
+\title{1.4.9.h}
 \author{EE24BTECH11007 - Arnav Makarand Yadnopavit}
 {\let\newpage\relax\maketitle}
 \renewcommand{\thefigure}{\theenumi}
@@ -49,7 +49,8 @@
 \renewcommand{\thetable}{\theenumi}
 \parindent 0px
 Question:\\
-Find the value of $a$, if the distance between the points $\vec{A}\brak{-3,-14}$ and $\vec{B}\brak{a,-5}$ is 9 units.\\
+Find the coordinates of the points which trisect the line segment joining the points
+$\vec{P}$ \brak{4,2,-6} and $\vec{Q}$ \brak{10,-16,6}.\\
 \solution
 \begin{table}[h]
     \centering
@@ -57,17 +58,18 @@ Find the value of $a$, if the distance between the points $\vec{A}\brak{-3,-14}$
     \caption{Given Values}
     \label{tab:1}
 \end{table}
-Given that
+From \tabref{tab:1}\\
+Let $\vec{R}$ and $\vec{S}$ trisect $\vec{P}$ and $\vec{Q}$\\
+Using Section Formula
 \begin{align}
-d = \norm{A-B}=9\\
-\sqrt{\myvec{A-B}^\top\myvec{A-B}}=9\\
-\implies\myvec{-3-a & -9}\myvec{-3-a \\ -9}=81\\
-\implies\brak{a+3}^2=0\\
-\therefore a=-3
+\vec{R}=\frac{1}{\frac{1}{2}+1}\brak{\frac{1}{2}\myvec{4\\2\\-6}+\myvec{10\\-16\\6}}\\
+\vec{R}=\myvec{8\\-10\\2}\\
+\vec{S}=\frac{1}{\frac{2}{1}+1}\brak{\frac{2}{1}\myvec{4\\2\\-6}+\myvec{10\\-16\\6}}\\
+\vec{S}=\myvec{6\\-4\\-2}
 \end{align}
 \begin{figure}[h]
     \centering
     \includegraphics[width=\columnwidth]{figs/fig.png}
-    \caption{Plot of A,B}
+    \caption{Plot of $\vec{P}$,$\vec{Q}$,$\vec{R}$,$\vec{S}$}
  \end{figure}
 \end{document}

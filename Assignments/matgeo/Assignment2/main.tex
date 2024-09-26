@@ -38,7 +38,7 @@
 \usepackage{lscape}
 \begin{document}
 \bibliographystyle{IEEEtran}
-\title{1.4.9.h}
+\title{1.6.28}
 \author{EE24BTECH11007 - Arnav Makarand Yadnopavit}
 {\let\newpage\relax\maketitle}
 \renewcommand{\thefigure}{\theenumi}
@@ -49,8 +49,7 @@
 \renewcommand{\thetable}{\theenumi}
 \parindent 0px
 Question:\\
-Find the coordinates of the points which trisect the line segment joining the points
-$\vec{P}$ \brak{4,2,-6} and $\vec{Q}$ \brak{10,-16,6}.\\
+Show that the points $\vec{A}$ \brak{-2\hat{i}+3\hat{j}+5\hat{k}}, $\vec{B}$ \brak{\hat{i}+2\hat{j}+3\hat{k}} and $\vec{C}$ \brak{7\hat{i}-\hat{k}} are collinear\\
 \solution
 \begin{table}[h]
     \centering
@@ -59,17 +58,16 @@ $\vec{P}$ \brak{4,2,-6} and $\vec{Q}$ \brak{10,-16,6}.\\
     \label{tab:1}
 \end{table}
 From \tabref{tab:1}\\
-Let $\vec{R}$ and $\vec{S}$ trisect $\vec{P}$ and $\vec{Q}$\\
-Using Section Formula
+The matrix
 \begin{align}
-\vec{R}=\frac{1}{\frac{1}{2}+1}\brak{\frac{1}{2}\myvec{4\\2\\-6}+\myvec{10\\-16\\6}}\\
-\vec{R}=\myvec{8\\-10\\2}\\
-\vec{S}=\frac{1}{\frac{2}{1}+1}\brak{\frac{2}{1}\myvec{4\\2\\-6}+\myvec{10\\-16\\6}}\\
-\vec{S}=\myvec{6\\-4\\-2}
+\myvec{B-A & C-A}^\top=\myvec{3 & -1 & -2 \\ 9 & -3 & -6}\\
+\xleftrightarrow{R_2 =R_2 -3R_1} 
+\myvec{3 & -1 & -2 \\ 0 & 0 & 0}
 \end{align}
+$\therefore$ the rank=1 which implies points are collinear.
 \begin{figure}[h]
     \centering
     \includegraphics[width=\columnwidth]{figs/fig.png}
-    \caption{Plot of $\vec{P}$,$\vec{Q}$,$\vec{R}$,$\vec{S}$}
+    \caption{Plot of A,B,C}
  \end{figure}
 \end{document}

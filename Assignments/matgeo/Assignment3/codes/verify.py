@@ -1,11 +1,12 @@
 import numpy as np
-import ctypes
-func=ctypes.CDLL('/home/arnav/git/EE1030/Assignments/Assignment3/codes/func.so')
-A=[-2,3,5]
-B=[1,2,3]
-C=[7,0,-1]
+from ctypes import *
+func=CDLL('./func.so')
+A=[-3,-14]
+B=[-3,-5]
+AB=[]
+AB.append(func.sub(A[0],B[0]))
+AB.append(func.sub(A[1],B[1]))
 
-if func.sub(3*B[0],2*A[0])==C[0] and func.sub(3*B[1],2*A[1])==C[1] and func.sub(3*B[2],2*A[2])==C[2] :
-    print("Rank 1 and thus A,B,C collinear")
-else:
-    print("A,B,C not collinear")
+AB_c = (c_int * len(AB))(*AB) #Converts python list to c array
+norm=func.vector_norm(AB_c,2)
+print(norm)

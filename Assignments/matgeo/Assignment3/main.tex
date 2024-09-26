@@ -38,7 +38,7 @@
 \usepackage{lscape}
 \begin{document}
 \bibliographystyle{IEEEtran}
-\title{1.6.28}
+\title{1.8.20}
 \author{EE24BTECH11007 - Arnav Makarand Yadnopavit}
 {\let\newpage\relax\maketitle}
 \renewcommand{\thefigure}{\theenumi}
@@ -49,7 +49,7 @@
 \renewcommand{\thetable}{\theenumi}
 \parindent 0px
 Question:\\
-Show that the points $\vec{A}$ \brak{-2\hat{i}+3\hat{j}+5\hat{k}}, $\vec{B}$ \brak{\hat{i}+2\hat{j}+3\hat{k}} and $\vec{C}$ \brak{7\hat{i}-\hat{k}} are collinear\\
+Find the value of $a$, if the distance between the points $\vec{A}\brak{-3,-14}$ and $\vec{B}\brak{a,-5}$ is 9 units.\\
 \solution
 \begin{table}[h]
     \centering
@@ -57,17 +57,17 @@ Show that the points $\vec{A}$ \brak{-2\hat{i}+3\hat{j}+5\hat{k}}, $\vec{B}$ \br
     \caption{Given Values}
     \label{tab:1}
 \end{table}
-From \tabref{tab:1}\\
-The matrix
+Given that
 \begin{align}
-\myvec{B-A & C-A}^\top=\myvec{3 & -1 & -2 \\ 9 & -3 & -6}\\
-\xleftrightarrow{R_2 =R_2 -3R_1} 
-\myvec{3 & -1 & -2 \\ 0 & 0 & 0}
+d = \norm{A-B}=9\\
+\sqrt{\myvec{A-B}^\top\myvec{A-B}}=9\\
+\implies\myvec{-3-a & -9}\myvec{-3-a \\ -9}=81\\
+\implies\brak{a+3}^2=0\\
+\therefore a=-3
 \end{align}
-$\therefore$ the rank=1 which implies points are collinear.
 \begin{figure}[h]
     \centering
     \includegraphics[width=\columnwidth]{figs/fig.png}
-    \caption{Plot of A,B,C}
+    \caption{Plot of A,B}
  \end{figure}
 \end{document}
