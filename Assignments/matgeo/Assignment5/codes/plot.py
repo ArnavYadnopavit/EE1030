@@ -27,7 +27,6 @@ plt.fill_between(x,y,line_y,where=(y >= line_y), color='blue', alpha=0.3, label=
 # Label the axes and add a title
 plt.xlabel("x")
 plt.ylabel("y")
-plt.title("Parabola, Line, and Points $X_1$ & $X_2$")
 plt.grid(True)
 plt.legend(loc='upper right')
 plt.axis('equal')

@@ -76,7 +76,7 @@ double** intersect_of_parab_line(double **V,double **u,double f,double **point_o
 
 double function(double x)
 {
-	return x*x/8  ;
+	return x*x  ;
 }
 
 double area(double lower_limit, double upper_limit)
@@ -117,6 +117,12 @@ int main(){
     x1[1][0] = intersection[1][0];
     x2[0][0] = intersection[0][1];
     x2[1][0] = intersection[1][1];
+    double **P1 = createMat(2,1);
+    double **P2 = createMat(2,1);
+    P1[0][0]= 9;
+    P1[1][0]=3;
+    P2[0][0]=9;
+    P2[1][0]=-3;
     
     // Open file to write points
     FILE *fptr;
@@ -126,9 +132,8 @@ int main(){
         return 1;
     }
 
-    parab_y2_4ax_gen(fptr,x1,x2,-u[0][0]/2,100);
+    parab_y2_4ax_gen(fptr,P1,P2,-u[0][0]/2,100);
     
-    fprintf(fptr,"The area of the region is %lf", area(-4,4));
     
     // Close the file
     fclose(fptr);
