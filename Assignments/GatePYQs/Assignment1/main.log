@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.6)  24 OCT 2024 00:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.6)  25 OCT 2024 01:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1174,13 +1174,13 @@ LaTeX Font Info:    Trying to load font information for OT1+txr on input line 4
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
-)
-No file main.aux.
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 49.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
 49.
+
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
@@ -1307,6 +1307,8 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 49.
 LaTeX Info: Redefining \pageref on input line 49.
 LaTeX Info: Redefining \nameref on input line 49.
+
+(./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
@@ -1346,12 +1348,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--3
 []|\OT1/txr/m/n/9 Number of ve-hi-cles per day-
  []
 
-) (./tables/table3.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--3
-[]|\OT1/txr/m/n/9 Southing,
- []
-
-)
+) (./tables/table3.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 204--210
 
  []
@@ -1360,30 +1357,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 204--210
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [2] (./tables/table4.tex) [3] (./main.aux)
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 29939 strings out of 478287
- 588802 string characters out of 5849290
- 858395 words of memory out of 5000000
- 47395 multiletter control sequences out of 15000+600000
- 535588 words of font info for 166 fonts, out of 8000000 for 9000
+ 29946 strings out of 478287
+ 588855 string characters out of 5849290
+ 859603 words of memory out of 5000000
+ 47394 multiletter control sequences out of 15000+600000
+ 536964 words of font info for 168 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,14n,96p,408b,566s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,13n,96p,408b,565s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txf
 onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (3 pages, 47498 bytes).
+Output written on main.pdf (3 pages, 49286 bytes).
 PDF statistics:
  159 PDF objects out of 1000 (max. 8388607)
  140 compressed objects within 2 object streams
