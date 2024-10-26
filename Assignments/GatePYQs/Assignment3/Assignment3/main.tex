@@ -1,0 +1,233 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}     
+\usepackage{xparse}
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\usepackage{float}
+%\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\usepackage{ circuitikz }
+%\newtheorem{rem}{Remark}
+% Marks the beginning of the document
+\begin{document}
+\title{Assignment3}
+\author{EE24BTECH11007 - Arnav Makarand Yadnopavit}
+\maketitle
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+%2011-PH-'53-65'
+In a one-dimensional harmonic oscillator, $\varphi_0$, $\varphi_1$ and $\varphi_2$ are respectively the ground, first, and the second excited states. These three states are normalized and are orthogonal to one another.\\
+$\psi_1$ and $\psi_2$ are two states defined by
+$$\psi_1=\varphi_0-2\varphi_1+\varphi_2$$
+$$\psi_1=\varphi_0-\varphi_1+\alpha\varphi_2$$
+where $\alpha$ is a constant.
+\begin{enumerate}
+\item The value of $\alpha$ for which $\psi_2$ is orthogonal to $\psi_1$ is
+\begin{enumerate}
+\begin{multicols}{4}
+\item 2
+\item 1
+\item -1
+\item -2
+\end{multicols}
+\end{enumerate}
+\item For the value $\alpha$ determined Q.1, expectation value of energy of oscillator in the state $\psi_2$ is
+\begin{enumerate}
+\begin{multicols}{4}
+\item $\hbar\omega$
+\item $3\hbar\omega/2$
+\item $3\hbar\omega$
+\item $9\hbar\omega/2$
+\end{multicols}
+\end{enumerate}
+\end{enumerate}
+A plane electromagnetic wave has the magnetic field given by
+$${\overset{\rightarrow}{B}}\brak{x,y,z,t}=B_o\sin\sbrak{\brak{x+y}\frac{k}{\sqrt{2}}+\omega t}\hat{k}$$
+where $k$ is the wave number and $\hat{i}$, $\hat{j}$, $\hat{k}$ are the Cartesian unit vectors in $x$, $y$, and $z$ directions, respectively.
+\begin{enumerate}
+\setcounter{enumi}{2}
+\item The electric field ${\overset{\rightarrow}{E}}\brak{x,y,z,t}$ corresponding to the above wave is given by:
+\begin{enumerate}
+\begin{multicols}{2}
+\item $cB_o\sin\sbrak{\brak{x+y}\frac{k}{\sqrt{2}}+\omega t}\frac{\hat{i}-\hat{j}}{\sqrt{2}}$
+\item $cB_o\sin\sbrak{\brak{x+y}\frac{k}{\sqrt{2}}+\omega t}\frac{\hat{i}+\hat{j}}{\sqrt{2}}$
+\item $cB_o\sin\sbrak{\brak{x+y}\frac{k}{\sqrt{2}}+\omega t}\hat{i}$
+\item $cB_o\sin\sbrak{\brak{x+y}\frac{k}{\sqrt{2}}+\omega t}\hat{j}$
+\end{multicols}
+\end{enumerate}
+\item  The average Poynting vector is given by:
+\begin{enumerate}
+\begin{multicols}{2}
+\item $\frac{cB_o^2}{2\mu_o}\frac{\brak{\hat{i}-\hat{j}}}{\sqrt{2}}$
+\item $-\frac{cB_o^2}{2\mu_o}\frac{\brak{\hat{i}-\hat{j}}}{\sqrt{2}}$
+\item $\frac{cB_o^2}{2\mu_o}\frac{\brak{\hat{i}+\hat{j}}}{\sqrt{2}}$
+\item $-\frac{cB_o^2}{2\mu_o}\frac{\brak{\hat{i}+\hat{j}}}{\sqrt{2}}$
+\end{multicols}
+\end{enumerate}
+\item Choose the most appropriate word from the options given below to complete the following sentence:\\
+\textbf{If you are trying to make a strong impression on your audience, you cannot do so by being understated, tentative or \rule{3cm}{0.15mm}}.
+\begin{enumerate}
+\item hyperbolic
+\item restrained
+\item argumentative
+\item indifferent
+\end{enumerate}
+\item Choose the most appropriate word(s) from the options given below to complete the following sentence:\\
+\textbf{I contemplated \rule{3cm}{0.15mm} Singapore for my vacation but decided against it.}
+\begin{enumerate}
+\begin{multicols}{2}
+\item to visit
+\item having to visit
+\item visiting
+\item for a visit
+\end{multicols}
+\end{enumerate}
+\item If $\log\brak{P} = \brak{\frac{1}{2}}\log\brak{Q} = \frac{1}{3}\log\brak{R}$, then which of the following options is \textbf{TRUE}?
+\begin{enumerate}
+\begin{multicols}{4}
+\item $P^2 = Q^3R^2$
+\item $Q^2 = PR$
+\item $Q^2 = R^3P$
+\item $R = P^2Q^2$
+\end{multicols}
+\end{enumerate}
+\item Which of the following options is the closest in meaning to the word below:\\
+\textbf{Inexplicable}
+\begin{enumerate}
+\item Incomprehensible
+\item Indelible
+\item Inextricable
+\item Infallible
+\end{enumerate}
+\item Choose the word from the options given below that is most nearly opposite in meaning to the given word:\\
+\textbf{Amalgamate}
+\begin{enumerate}
+\item merge
+\item split
+\item collect
+\item separate
+\end{enumerate}
+\item A transporter receives the same number of orders each day. Currently, he has some pending orders (backlog) to be shipped. If he uses 7 trucks, then at the end of the 4th day he can clear all the orders. Alternatively, if he uses only 3 trucks, then all the orders are cleared at the end of the 10th day. What is the minimum number of trucks required so that there will be no pending order at the end of the 5th day?
+\begin{enumerate}
+\begin{multicols}{4}
+\item 4
+\item 5
+\item 6
+\item 7
+\end{multicols}
+\end{enumerate}
+\item The variable cost (V) of manufacturing a product varies according to the equation V = 4q, where q is the quantity produced. The fixed cost (F) of production of the same product reduces with q according to the equation F = 100/q. How many units should be produced to minimize the total cost (V+F)?
+\begin{enumerate}
+\begin{multicols}{4}
+\item 5
+\item 4
+\item 7
+\item 6
+\end{multicols}
+\end{enumerate}
+\item P, Q, R, and S are four types of dangerous microbes recently found in a human habitat. The area of each circle with its diameter printed in brackets represents the growth of a single microbe surviving the human immune system within 24 hours of entering the body. The danger to human beings varies proportionately with the toxicity, potency, and growth attributed to a microbe, as shown in the figure below:
+\begin{figure}[H]
+\centering
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+\draw  (3.75,16) rectangle (13.75,9.75);
+\draw [short] (3.75,14.75) -- (13.75,14.75);
+\draw [short] (3.75,13.5) -- (13.75,13.5);
+\draw [short] (3.75,12.25) -- (13.75,12.25);
+\draw [short] (3.75,11) -- (13.75,11);
+\draw [short] (6.25,16) -- (6.25,9.75);
+\draw [short] (7.5,16) -- (9.5,16);
+\draw [short] (8.75,16) -- (8.75,9.75);
+\draw [short] (11.25,16) -- (11.25,9.75);
+\draw  (6.25,14.75) circle (0.5cm);
+\draw  (7.5,13.5) circle (0.4cm);
+\draw  (6.25,11.5) circle (0.3cm);
+\draw  (11.25,11) circle (0.2cm);
+\node [font=\footnotesize, rotate around={90:(0,0)}] at (2.5,13.25) {(milligrams of microbe required to destroy half of the body mass in kilograms)};
+\node [font=\footnotesize, rotate around={90:(0,0)}] at (2,13.25) {Toxicity};
+\node [font=\footnotesize, rotate around={0:(0,0)}] at (8.75,9.25) {Potency};
+\node [font=\footnotesize, rotate around={0:(0,0)}] at (8.75,9) {(Probability that microbe will overcome human immunity system)};
+\node [font=\footnotesize] at (13.75,9.5) {1};
+\node [font=\footnotesize] at (11.25,9.5) {0.8};
+\node [font=\footnotesize] at (8.75,9.5) {0.6};
+\node [font=\footnotesize] at (6.25,9.5) {0.4};
+\node [font=\footnotesize] at (3.75,9.5) {0.2};
+\node [font=\footnotesize, rotate around={0:(0,0)}] at (3.4,9.75) {0};
+\node [font=\footnotesize, rotate around={0:(0,0)}] at (3.4,11) {200};
+\node [font=\footnotesize, rotate around={0:(0,0)}] at (3.4,12.25) {400};
+\node [font=\footnotesize, rotate around={0:(0,0)}] at (3.4,13.5) {600};
+\node [font=\footnotesize, rotate around={0:(0,0)}] at (3.4,14.75) {800};
+\node [font=\footnotesize, rotate around={0:(0,0)}] at (3.4,16) {1000};
+\node [font=\footnotesize] at (7.25,15.5) {P(50mm)};
+\node [font=\footnotesize] at (7.5,12.75) {Q(40mm)};
+\node [font=\footnotesize] at (7.5,11.25) {R(30mm)};
+\node [font=\footnotesize] at (12.5,11.5) {S(20mm)};
+\end{circuitikz}
+\end{figure}
+A pharmaceutical company is contemplating the development of a vaccine against the most dangerous microbe. Which microbe should the company target in its first attempt?
+\begin{enumerate}
+\begin{multicols}{4}
+\item P
+\item Q
+\item R
+\item S
+\end{multicols}
+\end{enumerate}
+\item \textbf{Few school curricula include a unit on how to deal with bereavement and grief, and yet all students at some point in their lives suffer from losses through death and parting.}\\
+Based on the above passage which topic would not be included in a unit on bereavement?
+\begin{enumerate}
+\item how to write a letter of condolence
+\item what emotional stages are passed through in the healing process
+\item what the leading causes of death are
+\item how to give support to a grieving friend
+\end{enumerate}
+\item A container originally contains 10 litres of pure spirit. From this container 1 litre of spirit is replaced with 1 litre of water. Subsequently, 1 litre of the mixture is again replaced with 1 litre of water and this process is repeated one more time. How much spirit is now left in the container?
+\begin{enumerate}
+\begin{multicols}{2}
+\item 7.58 litres
+\item 7.84 litres
+\item 7 litres
+\item 7.29 litres
+\end{multicols}
+\end{enumerate}
+\end{enumerate}
+\end{document}
