@@ -1,0 +1,185 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}     
+\usepackage{xparse}
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\usepackage{float}
+%\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\usepackage{ circuitikz }
+%\newtheorem{rem}{Remark}
+% Marks the beginning of the document
+\begin{document}
+\title{2017-MA-'53-65'}
+\author{EE24BTECH11007 - Arnav Makarand Yadnopavit}
+\maketitle
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+%2017-MA-'53-65'
+\begin{enumerate}
+\setcounter{enumi}{52}
+\item Let $X_1$,$X_2$,\dots,$X_n$ $\brak{n\geq2}$ be a random sample from a $N\brak{\theta,\theta}$ population, where $\theta>0$, and let 
+\[
+W=\frac{1}{n}\sum_{i=1}^n X_i^2
+\]
+Then the maximum likelihood estimator of $\theta$ is
+\begin{enumerate}
+\begin{multicols}{2}
+\item $\frac{1}{2}+\frac{1}{2}\sqrt{1-4W}$
+\item $\frac{1}{2}+\frac{1}{2}\sqrt{1+4W}$
+\item $\frac{-1}{2}+\frac{1}{2}\sqrt{1-4W}$
+\item $\frac{-1}{2}+\frac{1}{2}\sqrt{1+4W}$
+\end{multicols}
+\end{enumerate}
+\item Consider the following transportation problem. The entries inside the cells denote per unit cost of transportation from the origins to the destinations.
+\begin{figure}[H]
+    \centering
+    \input{figs/fig1.tex}
+\end{figure}
+The optimal cost of transportation equals \rule{2cm}{0.15mm}
+\item Consider the linear programming problem (LPP):
+\[
+\text{Maximize} \quad kx_1 + 5x_2
+\]
+\[
+\text{Subject to} \quad 
+\begin{aligned}
+    x_1 + x_2 &\leq 1, \\
+    2x_1 + 3x_2 &\leq 1, \\
+    x_1, x_2 &\geq 0.
+\end{aligned}
+\]
+If $x^*=\brak{x^*_1,x^*_2}$ is an optimal solution of the above LPP with $k=2$, then the largest value of $k$ (rounded to 2 decimal places) for which $x^*$ remains optimal equals \rule{2cm}{0.15mm} 
+\item  The ninth and the tenth of this month are Monday and Tuesday \rule{2cm}{0.15mm}
+\begin{enumerate}
+\begin{multicols}{4}
+\item figuratively
+\item retrospectively
+\item respectively
+\item rightfully
+\end{multicols}
+\end{enumerate}
+\item It is \rule{2cm}{0.15mm} to read this year's textbook \rule{2cm}{0.15mm} the last year's.
+\begin{enumerate}
+\begin{multicols}{4}
+\item easier, than
+\item most easy, than
+\item easier, from
+\item easiest, from
+\end{multicols}
+\end{enumerate}
+\item A rule states that in order to drink beer, one must be over 18 years old. In a bar, there are 4 people. P is 16 years old. Q is 25 years old. R is drinking milkshake and S is drinking a beer. What must be checked to ensure that the rule is being followed?
+\begin{enumerate}
+\item Only P's drink
+\item Only P's drink and S's age
+\item Only S's age
+\item Only P's drink. Q's drink and S's age
+\end{enumerate}
+\item Fatima starts from point P. goes North for 3$km$. and then East for 4$km$ to reach point Q. She then turns to face point P and goes 15$km$ in that direction. She then goes North for 6$km$. How far is she from point P. and in which direction should she go to reach point P?
+\begin{enumerate}
+\begin{multicols}{4}
+\item 8$km$. East
+\item 12$km$, North
+\item 6$km$. East
+\item 10$km$. North
+\end{multicols}
+\end{enumerate}
+\item 500 students are taking one or more courses out of Chemistry, Physics, and Mathematics. Registration records indicate course enrollment as follows: Chemistry \brak{329}. Physics \brak{186}, Mathematics \brak{295}. Chemistry and Physics \brak{83}. Chemistry and Mathematics \brak{217}, and Physics and Mathematics \brak{63}. How many students are taking all 3 subjects?
+\begin{enumerate}
+\begin{multicols}{4}
+\item 37
+\item 43
+\item 47
+\item 53    
+\end{multicols}
+\end{enumerate}
+\item \"If you are looking for a history of India, or for an account of the rise and fall of the British Raj. or for the reason of the cleaving of the subcontinent into two mutually antagonistic parts and the effects this mutilation will have in the respective sections, and ultimately on Asia, you will not find it in these pages; for though I have spent a lifetime in the country. I lived too near the seat of events, and was too intimately associated with the actors, to get the perspective needed for the impartial recording of these matters.\"\\\\
+Which of the following statements best reflects the author's opinion?
+\begin{enumerate}
+\item An intimate association does not allow for the necessary perspective.
+\item Matters are recorded with an impartial perspective.
+\item An intimate association offers an impartial perspective.
+\item Actors are typically associated with the impartial recording of matters.
+\end{enumerate}
+\item Each of P. Q. R. S. W. X. Y and Z has been married at most once. X and Y are married and have two children P and Q. Z is the grandfather of the daughter S of P. Further. Z and W are married and are parents of R. Which one of the following must necessarily be FALSE?
+\begin{enumerate}
+\begin{multicols}{2}
+\item X is the mother-in-law of R
+\item P and R are not married to each other
+\item P is a son of X and Y
+\item Q cannot be married to R
+\end{multicols}
+\end{enumerate}
+\item 1200 men and 500 women can build a bridge in 2 weeks. 900 men and 250 women will take 3 weeks to build the same bridge. How many men will be needed to build the bridge in one week?
+\begin{enumerate}
+\begin{multicols}{4}
+\item 3000
+\item 3300
+\item 3600
+\item 3900
+\end{multicols}
+\end{enumerate}
+\item The number of 3-digit numbers such that the digit 1 is never to the immediate right of 2 is
+\begin{enumerate}
+\begin{multicols}{4}
+\item 781
+\item 791
+\item 881
+\item 891
+\end{multicols}
+\end{enumerate}
+\item A contour line joins locations having the same height above the mean sea level. The following is a contour plot of a geographical region. Contour lines are shown at 25$m$ intervals in this plot.
+\begin{figure}[H]
+    \centering
+    \input{figs/fig2.tex}
+ \end{figure}
+ Which of the following is the steepest path leaving from P?
+\begin{enumerate}
+\begin{multicols}{4}
+\item P to Q
+\item P to R
+\item P to S
+\item P to T
+\end{multicols}
+\end{enumerate}
+\end{enumerate}
+\end{document}
