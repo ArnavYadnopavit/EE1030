@@ -1,0 +1,28 @@
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw [line width=1.2pt, ->, >=Stealth] (5,8.5) -- (5,14.75);
+\draw [line width=1.2pt, ->, >=Stealth] (5,8.5) -- (15,8.5);
+\draw [line width=0.8pt, short] (6.25,9.75) -- (6.25,8);
+\draw [line width=0.8pt, short] (6.75,8.5) -- (6.75,8);
+\draw [line width=0.8pt, short] (7.25,8.5) -- (7.25,8);
+\draw [line width=0.8pt, short] (7.75,8.5) -- (9.75,8.5);
+\draw [line width=0.8pt, short] (7.75,8.5) -- (7.75,8);
+\draw [line width=0.8pt, short] (8.25,8.5) -- (8.25,8);
+\draw [line width=0.8pt, short] (8.75,8.5) -- (8.75,8);
+\draw [line width=0.8pt, short] (9.25,8.5) -- (9.25,8);
+\draw [line width=0.8pt, short] (9.75,8.5) -- (9.75,8);
+\draw [line width=0.8pt, short] (10.25,8.5) -- (10.25,8);
+\draw [line width=0.8pt, short] (10.75,8.5) -- (10.75,8);
+\draw [line width=0.8pt, short] (11.25,9.75) -- (11.25,8);
+\draw [line width=0.8pt, short] (6,9) .. controls (8.5,14.75) and (9.25,14.75) .. (11.25,9);
+\draw [ color={rgb,255:red,255; green,0; blue,0}, line width=0.8pt, dashed] (6.25,9.5) .. controls (8.75,15.75) and (9.75,13) .. (11,9.5);
+\node [font=\Large] at (4.25,15) {$f\brak{x}$};
+\node [font=\Large] at (4.25,8) {$\brak{0,0}$};
+\node [font=\Large] at (6.25,7.5) {$x_l$};
+\node [font=\Large] at (11.25,7.5) {$x_u$};
+\node [font=\Large] at (15,7.5) {$x$};
+\draw [line width=1.4pt, short] (11.25,14) -- (12.25,14);
+\draw [ color={rgb,255:red,254; green,6; blue,6}, line width=0.7pt, dashed] (11.25,13.5) -- (12.25,13.5);
+\node [font=\normalsize, color={rgb,255:red,5; green,5; blue,5}] at (13.75,14) {Actual function};
+\node [font=\normalsize, color={rgb,255:red,5; green,5; blue,5}] at (14.5,13.5) {Approximated function};
+\end{circuitikz}
