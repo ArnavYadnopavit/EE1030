@@ -1,0 +1,63 @@
+\begin{tabular}{|p{3cm}|p{4.5cm}|p{7.5cm}|}
+\hline
+\textbf{Algorithm} & \textbf{Advantages} & \textbf{Disadvantages} \\ 
+\hline
+\textbf{QR Algorithm with Householder technique and Wilkinson Shift} 
+& 
+\begin{itemize}
+    \item Fast convergence for symmetric/Hermitian matrices.
+    \item Wilkinson shift accelerates convergence.
+    \item Householder transformations ensure numerical stability and efficiency.
+\end{itemize}
+& 
+\begin{itemize}
+    \item Computationally intensive for large matrices due to repeated QR decompositions.
+\end{itemize} \\\hline
+\textbf{Divide-and-Conquer}
+& 
+\begin{itemize}
+    \item Highly efficient for symmetric matrices.
+    \item Scales well with matrix size for parallel computing.
+\end{itemize}
+& 
+\begin{itemize}
+    \item Less numerically stable for small eigenvalues.
+    \item Preprocessing required for non-symmetric matrices.
+\end{itemize} \\\hline
+
+\textbf{Jacobi Algorithm}
+& 
+\begin{itemize}
+    \item Simple to implement.
+    \item Numerically stable for symmetric matrices.
+\end{itemize}
+& 
+\begin{itemize}
+    \item Slower convergence compared to QR with shifts.
+    \item Inefficient for large matrices.
+\end{itemize} \\\hline
+
+\textbf{Bisection Method}
+& 
+\begin{itemize}
+    \item Reliable for computing eigenvalues in a specific interval.
+    \item Works well with tridiagonal matrices.
+\end{itemize}
+& 
+\begin{itemize}
+    \item Only provides eigenvalues, not eigenvectors.
+    \item Convergence can be slow without good initial bounds.
+\end{itemize} \\\hline
+
+\textbf{Standard QR Algorithm (without Shift)}
+& 
+\begin{itemize}
+    \item Robust for small matrices.
+    \item Simple structure and implementation.
+\end{itemize}
+& 
+\begin{itemize}
+    \item Slower convergence compared to the shifted version.
+    \item Requires significantly more iterations.
+\end{itemize} \\\hline
+\end{tabular}
